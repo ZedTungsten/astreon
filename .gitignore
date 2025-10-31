@@ -1,8 +1,8 @@
 # Node / Next.js
 node_modules/
 .next/
-dist/
 out/
+dist/
 build/
 
 # Env files
@@ -27,8 +27,6 @@ Thumbs.db
 # Editor files
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
 
 # Swap / lock
 *.swp
