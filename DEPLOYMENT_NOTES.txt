@@ -1,0 +1,12 @@
+Deploy notes:
+- In Vercel Project Settings add:
+  NEXT_PUBLIC_SUPABASE_URL
+  NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+- For server-only operations, store SUPABASE_SERVICE_ROLE_KEY in Vercel as a Project Secret and only reference it from API routes or Edge Functions.
+
+- Set Vercel framework preset to Next.js for automatic builds.
+
+- To test locally create .env.local with the two NEXT_PUBLIC_* vars and run:
+  npm install
+  npm run dev
