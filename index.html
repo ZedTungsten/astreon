@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Astreon — Accounting for small teams</title>
+  <meta name="description" content="Astreon — simple double-entry accounting, reconciliation, and accountant-ready exports." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; margin:0; color:#111;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid #eee;}
+    .logo{font-weight:700;color:#0b5;letter-spacing:.5px}
+    .container{max-width:1100px;margin:36px auto;padding:0 20px}
+    .hero{display:flex;flex-wrap:wrap;gap:20px;align-items:center}
+    .hero-text{flex:1 1 360px}
+    h1{margin:0 0 10px;font-size:28px}
+    p.lead{margin:0 0 18px;color:#444}
+    .cta{display:inline-block;padding:10px 16px;background:#0066ff;color:#fff;border-radius:6px;text-decoration:none}
+    .features{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .feature{flex:1 1 200px;padding:14px;border:1px solid #f0f0f0;border-radius:8px;background:#fff}
+    footer{margin-top:48px;padding:20px;border-top:1px solid #eee;color:#666;text-align:center;font-size:14px}
+    @media(max-width:720px){h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Astreon</div>
+    <nav>
+      <a href="#" style="margin-right:12px;color:#333;text-decoration:none">Product</a>
+      <a href="#" style="margin-right:12px;color:#333;text-decoration:none">Pricing</a>
+      <a href="#" style="margin-right:12px;color:#333;text-decoration:none">Docs</a>
+      <a class="cta" href="#">Get started</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Accounting made simple for small teams</h1>
+        <p class="lead">Import your transactions, reconcile bank feeds, and generate accountant‑ready reports — secure and fast.</p>
+        <p>
+          <a class="cta" href="#">Start free</a>
+          <a href="#" style="margin-left:12px;color:#0066ff;text-decoration:none">See demo</a>
+        </p>
+
+        <div class="features" aria-hidden="true">
+          <div class="feature"><strong>Double-entry</strong><div style="color:#666;font-size:13px">Accurate balancing for every transaction</div></div>
+          <div class="feature"><strong>Reconciliation</strong><div style="color:#666;font-size:13px">Match bank imports quickly</div></div>
+          <div class="feature"><strong>Secure</strong><div style="color:#666;font-size:13px">Postgres backend, RLS-ready</div></div>
+          <div class="feature"><strong>Exports</strong><div style="color:#666;font-size:13px">CSV & PDF exports for accountants</div></div>
+        </div>
+      </div>
+
+      <div style="flex:0 1 420px;">
+        <div style="border:1px solid #eee;border-radius:8px;padding:12px;background:#fafafa">
+          <div style="height:260px;display:flex;align-items:center;justify-content:center;color:#999">Your app dashboard preview</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Astreon — <a href="#" style="color:inherit">Privacy</a> · <a href="#" style="color:inherit">Terms</a>
+    </footer>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
